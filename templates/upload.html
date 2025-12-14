@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics & Forecast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+        }
+        .disclaimer {
+            color: red;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+        footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card shadow p-5">
+        <h2 class="mb-4 text-center">Sales Analytics & Forecast</h2>
+
+        <!-- Upload Form -->
+        <form action="/dashboard" method="POST" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label for="salesFile" class="form-label fw-bold">Upload Sales Excel File</label>
+                <input type="file" id="salesFile" name="file" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+                Upload & Analyze
+            </button>
+        </form>
+
+        <!-- Divider -->
+        <hr class="my-5">
+
+        <!-- Download Sample Template -->
+        <div class="text-center">
+            <p class="mb-2">Don’t have a file? Download a template to get started:</p>
+            <a href="/download-template" class="btn btn-outline-success">
+                Download Excel Template
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Disclaimer -->
+<div class="disclaimer">
+    Disclaimer: The web page is built as a demo and may handle Excel files up to 10&nbsp;MB only.
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Deepak G Kutty. All rights reserved.
+</footer>
+
+</body>
+</html>
