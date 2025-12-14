@@ -1,7 +1,7 @@
-flask
-pandas
-numpy
-openpyxl
-scikit-learn
-plotly
-statsmodels
+Flask==2.3.5
+pandas==2.1.1
+numpy==1.26.2
+scikit-learn==1.3.2
+matplotlib==3.8.1
+reportlab==4.0.3
+openpyxl==3.1.3
